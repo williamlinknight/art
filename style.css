@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.sketch-container {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
