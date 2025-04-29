@@ -1,9 +1,7 @@
-function setup() {
-    let canvas = createCanvas(400, 400);
-    canvas.parent('sketch-holder');
+function showTime() {
+	document.getElementById('currentTime').innerHTML = new Date().toUTCString();
 }
-
-function draw() {
-    background(220);
-    // Your sketch code here
-}
+showTime();
+setInterval(function () {
+	showTime();
+}, 1000);
