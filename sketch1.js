@@ -1,11 +1,9 @@
-new p5(function(p) {
-    p.setup = function() {
-        let canvas = p.createCanvas(300, 300);
-        canvas.parent('sketch1');
-    }
+function setup() {
+    let canvas = createCanvas(400, 400);
+    canvas.parent('sketch-holder');
+}
 
-    p.draw = function() {
-        p.background(220);
-        // Your p5.js code here
-    }
-});
+function draw() {
+    background(220);
+    // Your sketch code here
+}
